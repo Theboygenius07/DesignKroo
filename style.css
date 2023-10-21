@@ -101,10 +101,19 @@ cursor: pointer;
     border-radius: 6px;
     cursor: pointer;
 }
+
 .rnav li a{
     padding: 16px 30px;
     /* background-color: var(--primary-color); */
     color: var(--color-white) !important;
+   transform: translateZ(200px);
+}
+.lnav li a{
+   transform: translateZ(200px);
+}
+.rnav .lnav{
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
 }
 
 .hero{
